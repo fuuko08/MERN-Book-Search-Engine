@@ -7,7 +7,7 @@ const resolvers = {
         me: async (parents, args, context) => {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user.id })
-                .select('-__v -password')
+                .select('-__v -password');
                 return userData;
             }
             throw new AuthenticationError('You are not logged in!');
@@ -38,7 +38,7 @@ const resolvers = {
                     { _id: context.user._id },
                     { $addToSet: {savedBooks: book} },
                     { new: true }
-                )
+                );
                 return updatedUser;
             }
             throw new AuthenticationError("Please login to continue!")
@@ -49,7 +49,7 @@ const resolvers = {
                     { _id: context.user._id },
                     { $pull: { savedBooks: { bookId: bookId }}},
                     { new: true }
-                )
+                );
                 return updatedUser;
             }
         }
