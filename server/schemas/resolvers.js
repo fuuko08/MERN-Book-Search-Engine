@@ -4,7 +4,7 @@ const { signToken } = require("../utils/auth");
 
 const resolvers = {
     Query: {
-        me: async (parents, args, context) => {
+        me: async (parent, args, context) => {
             if (context.user) {
                 const userData = await User.findOne({ _id: context.user.id })
                 .select('-__v -password');
@@ -25,8 +25,8 @@ const resolvers = {
             if (!user) {
                 throw new AuthenticationError("Can't find this user!")
             }
-            const validPassword = await user.isCorrectPassword(password);
-            if (!validPassword) {
+            const correctPw = await user.isCorrectPassword(password);
+            if (!correctPw) {
                 throw new AuthenticationError("Invalid Password!")
             }
             const token = signToken(user);
