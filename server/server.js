@@ -9,8 +9,6 @@ const db = require('./config/connection');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-mongodb+srv://fuuko08:Thiensu08@cluster0.0k9xhun.mongodb.net/test
-
 const server = new ApolloServer({
   typeDefs,
   resolvers,
