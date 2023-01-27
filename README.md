@@ -24,7 +24,7 @@ The app was built using the MERN Stack, with a React front end, MongoDB database
 
 Live deployed application: https://mear-booksearchengine.herokuapp.com/
 
-To start the app, use the command: ```npm start```
+To start the app, use the command: ```npm run develop```
 
 ### User Story
 ```
