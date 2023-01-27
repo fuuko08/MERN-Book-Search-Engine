@@ -4,7 +4,10 @@
 
 ## Description
 
+The app was built using the MERN Stack, with a React front end, MongoDB database, Node.js/Express.js server and GraphQL API. I also created an Apollo Provider so that requests can communicate with an Apollo Server. App is deployed with Heroku. 
 
+<img width="1917" alt="Screenshot 2023-01-25 at 8 34 19 PM" src="https://user-images.githubusercontent.com/108949883/215204189-919d785d-821e-4be5-b543-7208a3036eea.png">
+<img width="1901" alt="Screenshot 2023-01-27 at 1 18 35 PM" src="https://user-images.githubusercontent.com/108949883/215204218-adba1d31-b882-4db5-a6b3-0d4ba2f3b7d3.png">
 
 ## Table of Contents
 
@@ -19,9 +22,9 @@
 
 ## Instruction
 
-Live deployed application: 
+Live deployed application: https://mear-booksearchengine.herokuapp.com/
 
-To start the app, use the command:
+To start the app, use the command: ```npm start```
 
 ### User Story
 ```
@@ -67,7 +70,7 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 
 ## Usage
 
-
+MERN Stack, graphQL, apollo, bootstrap,  
 
 <a name="license"/>
 
@@ -91,7 +94,7 @@ Copyright (c) 2022 fuuko08
 
 ## Contributing
 
-Github, Apollo Sandbox,
+Github, Apollo Sandbox, Heroku, MongoDB Atlas, MongoDB Compass
 
 <a name="questions"/>
 
